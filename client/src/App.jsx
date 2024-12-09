@@ -19,6 +19,12 @@ function App() {
   const agregarPost = async () => {
     const post = { titulo, url: imgSrc, descripcion };
     await axios.post(urlBaseServer + "/posts", post);
+    <Form
+            setTitulo={""}
+            setImgSRC={""}
+            setDescripcion={""}
+            agregarPost={""}
+          />
     getPosts();
   };
 
